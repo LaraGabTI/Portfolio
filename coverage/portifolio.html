@@ -1,0 +1,145 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>   
+
+    <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top shadow">
+        <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Meu Portfólio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#SobreMim">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Tecnologias">Tecnologias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contato">Contato</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <header id="home" class="pt-5 mt-5">
+        <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5 text-center mb-4 mb-md-0">
+            <img src="desenho.png" alt="Desenho" class="img-fluid rounded-circle" style="max-width: 300px;">
+            </div>
+            <div class="col-12 col-md-7 bg-dark bg-opacity-75 text-center text-white p-4 rounded-5">
+            <h1 class="display-5">Bem-vindo ao meu Portfólio</h1>
+            <p class="lead">Desenvolvedora Web em Aprendizado</p>
+            <a href="#SobreMim" class="btn btn-light btn-lg mt-3">Saiba mais</a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Sobre Mim -->
+    <section id="SobreMim" class="py-5 mt-5 bg-dark text-white">
+        <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+            <img src="imgLara.jpg" alt="Foto de Lara" class="img-fluid rounded-circle" style="max-width: 250px;">
+            </div>
+            <div class="col-12 col-md-8">
+            <h2>Sobre mim</h2>
+            <p class="lead">
+                Olá, meu nome é Lara e sou uma desenvolvedora web apaixonada por criar experiências digitais incríveis.
+                Tenho experiência em HTML, CSS, JavaScript e estou sempre aprendendo novas tecnologias para aprimorar minhas habilidades.
+            </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="Tecnologias" class="py-5">
+        <div class="container text-center">
+        <h2>Tecnologias que estou aprendendo</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="img-fluid" width="80" />
+            <p>HTML5</p>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="img-fluid" width="80" />
+            <p>CSS3</p>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="img-fluid" width="80" />
+            <p>JavaScript</p>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" class="img-fluid" width="80" />
+            <p>Bootstrap</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="Projetos" class="py-5">
+        <div class="container">
+        <h2 class="text-center mb-5">Meus Projetos</h2>
+        <div class="row g-4">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-button">
+                <img src="img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Projeto 1</h5>
+                <p class="card-text">Descrição Breve do Projeto</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-button">
+                <img src="img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Projeto 2</h5>
+                <p class="card-text">Descrição Breve do Projeto</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-button">
+                <img src="img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Projeto 3</h5>
+                <p class="card-text">Descrição Breve do Projeto</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <style>
+        .card-button {
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
