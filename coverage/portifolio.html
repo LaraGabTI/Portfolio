@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     </head>   
 
     <body>
@@ -174,38 +176,61 @@
     </section>
     
     <style>
-        .project-card {
-            background-color: #1c1c1e;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .contact-card {
+        background-color: #6c757d;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
         }
-        
-        .project-card:hover {
-            transform: scale(1.02);
-            box-shadow: 0 6px 30px rgba(255, 255, 255, 0.08);
+
+        .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-        
-        .project-card img {
-            height: 200px;
-            object-fit: cover;
-            object-position: center;
+
+        .contact-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
         }
+
+        .contact-card:hover .contact-icon {
+        transform: scale(1.1);
+        }
+
+        .contact-info h6 {
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #212529;
+        }
+
+        .contact-info p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #6c757d;
+    }
     </style>
     <!-- Projetos -->
-    <section id="Projetos" class="py-5 bg-black text-white">
+    <section id="Projetos" class="py-5 bg-dark text-white">
         <div class="container">
         <h2 class="text-center mb-5 fw-bold">💼 Meus Projetos</h2>
         <div class="row g-4">
     
             <!-- Card de Projeto -->
             <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="project-card h-100">
+            <div class="project-card h-100 bg-secondary bg-opacity-50 rounded-4">
                 <img src="img-portfolio.jpg" class="card-img-top rounded-top" alt="Imagem do Portfólio">
                 <div class="p-4">
                 <h5 class="fw-semibold mb-2">🌐 Meu Portfólio</h5>
-                <p class="text-light-emphasis">Este site que você está navegando! Desenvolvido com foco em organização, identidade visual e experiência de usuário.</p>
+                <p class="text-white">Este site que você está navegando! Desenvolvido com foco em organização, identidade visual e experiência de usuário.</p>
                 <div class="d-flex justify-content-between mt-4">
                     <a href="https://github.com/seuusuario/portfolio" target="_blank" class="btn btn-outline-light btn-sm">GitHub</a>
                     <span class="btn btn-light btn-sm disabled">Online</span>
@@ -216,11 +241,11 @@
     
             <!-- Projeto 2 -->
             <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="project-card h-100">
+            <div class="project-card h-100 bg-secondary bg-opacity-50 rounded-4">
                 <img src="img-desafios.jpg" class="card-img-top rounded-top" alt="Imagem do Sistema de Desafios">
                 <div class="p-4">
                 <h5 class="fw-semibold mb-2">🧩 Sistema de Desafios</h5>
-                <p class="text-light-emphasis">Plataforma para registro e acompanhamento de problemas reais nos setores da empresa. Admins podem avaliar, comentar e gerar projetos.</p>
+                <p class="text-white">Plataforma para registro e acompanhamento de problemas reais nos setores da empresa. Admins podem avaliar, comentar e gerar projetos.</p>
                 <div class="d-flex justify-content-between mt-4">
                     <a href="https://github.com/seuusuario/desafios-api" target="_blank" class="btn btn-outline-light btn-sm">GitHub</a>
                     <span class="btn btn-outline-light btn-sm disabled">API Interna</span>
@@ -231,11 +256,11 @@
     
             <!-- Projeto 3 -->
             <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="project-card h-100">
+            <div class="project-card h-100 bg-secondary bg-opacity-50 rounded-4">
                 <img src="img-hackathon.jpg" class="card-img-top rounded-top" alt="Imagem do Projeto Hackathon">
                 <div class="p-4">
                 <h5 class="fw-semibold mb-2">🚀 Projeto Hackathon</h5>
-                <p class="text-light-emphasis">Protótipo desenvolvido em equipe, com apresentação no pitch final. Solução para impacto social com uso de dados e design acessível.</p>
+                <p class="text-white">Protótipo desenvolvido em equipe, com apresentação no pitch final. Solução para impacto social com uso de dados e design acessível.</p>
                 <div class="d-flex justify-content-between mt-4">
                     <a href="https://github.com/seuusuario/hackathon" target="_blank" class="btn btn-outline-light btn-sm">GitHub</a>
                     <span class="btn btn-outline-secondary btn-sm disabled">Protótipo</span>
@@ -253,32 +278,29 @@
         <h2 class="fw-bold mb-3">📬 Entre em Contato</h2>
         <p class="text-muted mb-5">Quer trocar uma ideia, colaborar ou apenas dar um oi? Fico feliz com o seu contato!</p>
     
-        <div class="row justify-content-center g-4">
-            
+        <div class="row justify-content-center g-3">
+    
             <!-- Email -->
             <div class="col-12 col-md-4">
-            <a href="mailto:seuemail@email.com" class="text-dark text-decoration-none d-flex flex-column align-items-center contact-box shadow-sm p-4 rounded-4 h-100">
-                <i class="bi bi-envelope-fill fs-1 mb-2 text-primary"></i>
-                <span class="fw-semibold">Email</span>
-                <small>seuemail@email.com</small>
+            <a href="mailto:seunome@gmail.com" class="btn btn-secondary w-100 py-3 d-flex align-items-center justify-content-center gap-2 shadow-sm rounded-4">
+                <i class="bi bi-envelope-fill fs-4"></i>
+                <span>seunome@gmail.com</span>
             </a>
             </div>
     
             <!-- LinkedIn -->
             <div class="col-12 col-md-4">
-            <a href="https://linkedin.com/in/seuusuario" target="_blank" class="text-dark text-decoration-none d-flex flex-column align-items-center contact-box shadow-sm p-4 rounded-4 h-100">
-                <i class="bi bi-linkedin fs-1 mb-2 text-primary"></i>
-                <span class="fw-semibold">LinkedIn</span>
-                <small>linkedin.com/in/seuusuario</small>
+            <a href="https://www.linkedin.com/in/seuusuario/" target="_blank" class="btn btn-secondary w-100 py-3 d-flex align-items-center justify-content-center gap-2 shadow-sm rounded-4">
+                <i class="bi bi-linkedin fs-4"></i>
+                <span>LinkedIn</span>
             </a>
             </div>
     
             <!-- GitHub -->
             <div class="col-12 col-md-4">
-            <a href="https://github.com/seuusuario" target="_blank" class="text-dark text-decoration-none d-flex flex-column align-items-center contact-box shadow-sm p-4 rounded-4 h-100">
-                <i class="bi bi-github fs-1 mb-2"></i>
-                <span class="fw-semibold">GitHub</span>
-                <small>github.com/seuusuario</small>
+            <a href="https://github.com/seuusuario" target="_blank" class="btn btn-secondary w-100 py-3 d-flex align-items-center justify-content-center gap-2 shadow-sm rounded-4">
+                <i class="bi bi-github fs-4"></i>
+                <span>GitHub</span>
             </a>
             </div>
     
