@@ -3,6 +3,17 @@ body, div, section, header, main {
     outline: none;
 }
 
+
+    #home .text-box {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    #home .text-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+
 #SobreMim {
     .soft-skill-card {
         transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
