@@ -1,133 +1,185 @@
-    body, div, section, header, main {
-        caret-color: transparent;
-        outline: none;
+body, div, section, header, main {
+    caret-color: transparent;
+    outline: none;
+}
+
+#SobreMim {
+    .soft-skill-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        cursor: default;
     }
-    #Tecnologias{
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-                }
-                to {
-                opacity: 1;
-                transform: scale(1);
-                }
-            }
-        
-            .tech-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                animation: fadeIn 1s ease-in-out;
-            }
-        
-            .tech-circle {
-                border-radius: 50%;
-                width: 360px;
-                height: 360px;
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-                transition: transform 0.3s ease;
-            }
-        
-            .tech-circle:hover {
-                transform: scale(1.03);
-            }
-        
-            .tech-circle.learning {
-                border: 5px solid #212529;
-                background: radial-gradient(circle, #e7f1ff, #ffffff);
-            }
-        
-            .tech-circle.using {
-                border: 5px solid #212529;
-                background: radial-gradient(circle, #e6fffa, #ffffff);
-            }
-        
-            .tech-circle h4 {
-                font-weight: bold;
-                margin-bottom: 20px;
-            }
-        
-            .tech-icons {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 15px;
-            }
-        
-            .tech-item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 70px;
-                transition: transform 0.2s;
-            }
-        
-            .tech-item:hover {
-                transform: scale(1.1);
-            }
-        
-            .tech-item img {
-                width: 40px;
-                height: 40px;
-            }
-        
-            .tech-item p {
-                font-size: 0.8rem;
-                font-weight: bold;
-                margin-top: 5px;
-            }
-            @media (max-width: 768px) {
-                .tech-circle {
-                width: 300px;
-                height: 300px;     }
-            }
-        }
-        
-        .contact-card {
-        background-color: #6c757d;
-        border-radius: 15px;
-        padding: 20px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    .soft-skill-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .profile-img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .profile-img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
+
+#Projetos {
+    .project-card {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        text-align: center;
-        }
+    }
 
-        .contact-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
 
-        .contact-icon {
-        width: 60px;
-        height: 60px;
+    .project-card img {
+        transition: filter 0.3s ease;
+    }
+
+    .project-card:hover img {
+        filter: brightness(1.05);
+    }
+
+    .project-card a.btn:hover {
+        background-color: #ffffff;
+        color: #212529;
+        border-color: #ffffff;
+    }
+
+    .project-card span.btn:hover {
+        opacity: 0.8;
+    }
+}
+
+#Tecnologias {
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .tech-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .tech-circle {
         border-radius: 50%;
-        display: inline-flex;
+        width: 360px;
+        height: 360px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 30px;
-        margin-bottom: 10px;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
         transition: transform 0.3s ease;
-        }
-
-        .contact-card:hover .contact-icon {
-        transform: scale(1.1);
-        }
-
-        .contact-info h6 {
-        font-weight: 600;
-        margin-bottom: 5px;
-        color: #212529;
-        }
-
-        .contact-info p {
-        margin: 0;
-        font-size: 0.9rem;
-        color: #6c757d;
     }
+
+    .tech-circle:hover {
+        transform: scale(1.03);
+    }
+
+    .tech-circle.learning {
+        border: 5px solid #212529;
+        background: radial-gradient(circle, #e7f1ff, #ffffff);
+    }
+
+    .tech-circle.using {
+        border: 5px solid #212529;
+        background: radial-gradient(circle, #e6fffa, #ffffff);
+    }
+
+    .tech-circle h4 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .tech-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .tech-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70px;
+        transition: transform 0.2s;
+    }
+
+    .tech-item:hover {
+        transform: scale(1.1);
+    }
+
+    .tech-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tech-item p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .tech-circle {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+#Contato .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+/* Animação do ícone */
+#Contato .btn-secondary i {
+    transition: transform 0.3s ease;
+}
+
+#Contato .btn-secondary:hover i {
+    transform: scale(1.2);
+} 
+
+/* Hover específico por botão */
+
+/* Email - vermelho (Gmail) */
+#Contato .btn-email:hover {
+    background-color: #D44638 !important;
+    color: #fff !important;
+}
+
+/* LinkedIn - azul */
+#Contato .btn-linkedin:hover {
+    background-color: #0077B5 !important;
+    color: #fff !important;
+}
+
+/* GitHub - preto ou cinza escuro */
+#Contato .btn-github:hover {
+    background-color: #24292e !important;
+    color: #fff !important;
+}
