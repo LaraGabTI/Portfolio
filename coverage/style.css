@@ -2,8 +2,57 @@ body, div, section, header, main {
     caret-color: transparent;
     outline: none;
 }
+    .navbar {
+        background-color: rgba(33, 37, 41, 0.85);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition: background-color 0.4s ease, box-shadow 0.3s ease;
+    }
 
+    .navbar.scrolled {
+        background-color: rgba(18, 18, 18, 0.95);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
 
+    /* Links */
+    .navbar .nav-link {
+        color: #f8f9fa;
+        margin: 0 8px;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        width: 0;
+        height: 2px;
+        background-color: #0dcaf0;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .navbar .nav-link:hover {
+        color: #0dcaf0;
+    }
+
+    .navbar .nav-link:hover::after {
+        width: 90%;
+    }
+
+    /* Marca */
+    .navbar-brand {
+        font-size: 1.5rem;
+        color: #ffffff;
+        transition: color 0.3s;
+    }
+
+    .navbar-brand:hover {
+        color: #0dcaf0;
+    }
+
+    /* Botão de alternância  Home*/
     #home .text-box {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
