@@ -4,6 +4,7 @@ Bem-vindo ao meu portfólio!
 Este site foi criado com carinho para apresentar minha trajetória, tecnologias que utilizo e projetos que desenvolvi.
 
 ## 🖼️ Tela Inicial
+
 ![Portifolio](https://github.com/user-attachments/assets/a7b3a83e-e954-4aaf-a54d-e352eb87d069)
 
 ![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-yellow)
@@ -15,7 +16,12 @@ Este site foi criado com carinho para apresentar minha trajetória, tecnologias 
 
 ## 💻 Tecnologias Utilizadas
 
-| ![HTML5](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg) <br> HTML5 | ![CSS3](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg) <br> CSS3 | ![Bootstrap](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg) <br> Bootstrap | ![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg) <br> JavaScript | ![Figma](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg) <br> Figma |
+| ![HTML5](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg)  
+HTML5 | ![CSS3](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg)  
+CSS3 | ![Bootstrap](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg)  
+Bootstrap | ![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg)  
+JavaScript | ![Figma](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg)  
+Figma |
 |:--:|:--:|:--:|:--:|:--:|
 
 ## 🧩 Seções do Portfólio
@@ -25,7 +31,6 @@ Este site foi criado com carinho para apresentar minha trajetória, tecnologias 
 - **Tecnologias**: Separação entre o que já utilizo e estou aprendendo
 - **Projetos**: Cards com seus principais projetos
 - **Contato**: Links diretos para e-mail e redes
-
 
 ## 📬 Contato
 
