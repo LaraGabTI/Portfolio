@@ -244,10 +244,7 @@ body, div, section, header, main {
     color: #fff !important;
 }
 
-#SobreMim, #Projetos, #Tecnologias, #Contato {
-    scroll-margin-top: 80px; /* ajuste conforme a altura real da sua navbar */
+#SobreMim, #Projetos, #Tecnologias, #Contato, section {
+    scroll-margin-top: 65px; /* ajuste conforme a altura real da sua navbar */
 }
 
-section {
-    scroll-margin-top: 80px; /* ou o valor exato da altura da navbar */
-}
