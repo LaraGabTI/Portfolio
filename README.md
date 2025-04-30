@@ -32,4 +32,4 @@ Este site foi criado com carinho para apresentar minha trajetória, tecnologias 
 
 [![Email](https://img.shields.io/badge/Email-laragabryella7@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:laragabryella7@gmail.com)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-dev--lara--barros-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dev-lara-barros/)
 
-> Desenvolvido com 💙 por Lara Barros
+> Desenvolvido por Lara Barros 💙
